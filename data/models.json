@@ -1,6 +1,6 @@
 {
   "version": "2026-03-03",
-  "generatedAt": "2026-03-03T12:42:01.154Z",
+  "generatedAt": "2026-03-03T14:08:32.810Z",
   "providers": {
     "free": {
       "id": "free",
@@ -9,6 +9,7 @@
       "autoConnect": true,
       "authMethods": [],
       "internalProvider": "opencode",
+      "baseUrl": "https://opencode.ai/zen/v1",
       "defaultModel": "minimax-m2.5-free",
       "models": {
         "trinity-large-preview-free": {
@@ -1278,6 +1279,7 @@
           "description": "Z.AI API key from docs.z.ai"
         }
       ],
+      "baseUrl": "https://api.z.ai/api/coding/paas/v4",
       "defaultModel": "glm-4.7",
       "models": {
         "glm-5": {

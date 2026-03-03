@@ -49,6 +49,7 @@ interface LithoProvider {
   autoConnect: boolean;
   authMethods: { type: string; name: string; description?: string }[];
   internalProvider?: string;
+  baseUrl?: string;
   defaultModel: string;
   models: Record<string, LithoModel>;
 }
@@ -106,6 +107,7 @@ function transformProvider(
       ...(am.description && { description: am.description }),
     })),
     ...(curated.internalProvider && { internalProvider: curated.internalProvider }),
+    ...(sourceProvider.api && { baseUrl: sourceProvider.api }),
     defaultModel: curated.defaultModel,
     models,
   };
