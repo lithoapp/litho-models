@@ -1,0 +1,13 @@
+{
+  "name": "litho-models",
+  "version": "1.0.0",
+  "description": "Curated models API for Litho",
+  "type": "module",
+  "scripts": {
+    "sync": "tsx scripts/sync-models.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.2"
+  }
+}
