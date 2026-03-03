@@ -1,6 +1,6 @@
 {
   "version": "2026-03-03",
-  "generatedAt": "2026-03-03T15:29:25.812Z",
+  "generatedAt": "2026-03-03T15:39:58.606Z",
   "providers": {
     "free": {
       "id": "free",
@@ -977,26 +977,6 @@
             "oauth"
           ]
         },
-        "claude-3-5-haiku-latest": {
-          "id": "claude-3-5-haiku-latest",
-          "name": "Claude Haiku 3.5 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 8192,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 0.8,
-            "output": 4
-          },
-          "openWeights": false,
-          "releaseDate": "2024-10-22",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
         "claude-opus-4-1": {
           "id": "claude-opus-4-1",
           "name": "Claude Opus 4.1 (latest)",
@@ -1013,46 +993,6 @@
           },
           "openWeights": false,
           "releaseDate": "2025-08-05",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-5-sonnet-20241022": {
-          "id": "claude-3-5-sonnet-20241022",
-          "name": "Claude Sonnet 3.5 v2",
-          "contextWindow": 200000,
-          "maxOutput": 8192,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2024-10-22",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-sonnet-20240229": {
-          "id": "claude-3-sonnet-20240229",
-          "name": "Claude Sonnet 3",
-          "contextWindow": 200000,
-          "maxOutput": 4096,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2024-03-04",
           "authSupport": [
             "api_key",
             "oauth"
@@ -1184,108 +1124,6 @@
             "oauth"
           ]
         },
-        "claude-3-5-haiku-20241022": {
-          "id": "claude-3-5-haiku-20241022",
-          "name": "Claude Haiku 3.5",
-          "contextWindow": 200000,
-          "maxOutput": 8192,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 0.8,
-            "output": 4
-          },
-          "openWeights": false,
-          "releaseDate": "2024-10-22",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-5-sonnet-20240620": {
-          "id": "claude-3-5-sonnet-20240620",
-          "name": "Claude Sonnet 3.5",
-          "contextWindow": 200000,
-          "maxOutput": 8192,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2024-06-20",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-7-sonnet-latest": {
-          "id": "claude-3-7-sonnet-latest",
-          "name": "Claude Sonnet 3.7 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2025-02-19",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-7-sonnet-20250219": {
-          "id": "claude-3-7-sonnet-20250219",
-          "name": "Claude Sonnet 3.7",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2025-02-19",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-haiku-20240307": {
-          "id": "claude-3-haiku-20240307",
-          "name": "Claude Haiku 3",
-          "contextWindow": 200000,
-          "maxOutput": 4096,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 0.25,
-            "output": 1.25
-          },
-          "openWeights": false,
-          "releaseDate": "2024-03-13",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
         "claude-haiku-4-5-20251001": {
           "id": "claude-haiku-4-5-20251001",
           "name": "Claude Haiku 4.5",
@@ -1344,26 +1182,6 @@
           },
           "openWeights": false,
           "releaseDate": "2025-11-24",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "claude-3-opus-20240229": {
-          "id": "claude-3-opus-20240229",
-          "name": "Claude Opus 3",
-          "contextWindow": 200000,
-          "maxOutput": 4096,
-          "capabilities": [
-            "tool_call",
-            "attachment"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 75
-          },
-          "openWeights": false,
-          "releaseDate": "2024-02-29",
           "authSupport": [
             "api_key",
             "oauth"

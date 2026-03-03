@@ -14,6 +14,7 @@ export interface CuratedProvider {
   internalProvider?: string;
   baseUrl?: string;
   onlyFreeModels?: boolean;
+  excludedModels?: string[];
   defaultModel: string;
 }
 
@@ -51,6 +52,17 @@ export const curatedProviders: CuratedProvider[] = [
     authMethods: [
       { type: "api_key", name: "API Key", description: "Anthropic API key from console.anthropic.com" },
       { type: "oauth", name: "OAuth", description: "OAuth for Claude Code integration" },
+    ],
+    excludedModels: [
+      "claude-3-5-sonnet-20241022",
+      "claude-3-5-haiku-latest",
+      "claude-3-sonnet-20240229",
+      "claude-3-5-haiku-20241022",
+      "claude-3-5-sonnet-20240620",
+      "claude-3-7-sonnet-latest",
+      "claude-3-7-sonnet-20250219",
+      "claude-3-haiku-20240307",
+      "claude-3-opus-20240229",
     ],
     defaultModel: "claude-sonnet-4-6",
   },

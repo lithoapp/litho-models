@@ -117,6 +117,7 @@ function transformProvider(
 
   for (const [modelId, model] of Object.entries(sourceProvider.models)) {
     if (curated.onlyFreeModels && !isFreeModel(model)) continue;
+    if (curated.excludedModels?.includes(modelId)) continue;
     if (curated.id === "openai" && modelId.startsWith("text-embedding")) continue;
 
     const lithoModel = transformModel(model);
