@@ -1,6 +1,6 @@
 {
   "version": "2026-03-03",
-  "generatedAt": "2026-03-03T15:21:19.730Z",
+  "generatedAt": "2026-03-03T15:29:25.812Z",
   "providers": {
     "free": {
       "id": "free",
@@ -193,7 +193,10 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2024-11-20"
+          "releaseDate": "2024-11-20",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.3-codex": {
           "id": "gpt-5.3-codex",
@@ -210,7 +213,11 @@
             "output": 14
           },
           "openWeights": false,
-          "releaseDate": "2026-02-05"
+          "releaseDate": "2026-02-05",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "gpt-5-codex": {
           "id": "gpt-5-codex",
@@ -226,7 +233,11 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-09-15"
+          "releaseDate": "2025-09-15",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "gpt-5-pro": {
           "id": "gpt-5-pro",
@@ -243,7 +254,10 @@
             "output": 120
           },
           "openWeights": false,
-          "releaseDate": "2025-10-06"
+          "releaseDate": "2025-10-06",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4o-mini": {
           "id": "gpt-4o-mini",
@@ -259,20 +273,10 @@
             "output": 0.6
           },
           "openWeights": false,
-          "releaseDate": "2024-07-18"
-        },
-        "text-embedding-ada-002": {
-          "id": "text-embedding-ada-002",
-          "name": "text-embedding-ada-002",
-          "contextWindow": 8192,
-          "maxOutput": 1536,
-          "capabilities": [],
-          "cost": {
-            "input": 0.1,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2022-12-15"
+          "releaseDate": "2024-07-18",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5-chat-latest": {
           "id": "gpt-5-chat-latest",
@@ -288,7 +292,10 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-08-07"
+          "releaseDate": "2025-08-07",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "codex-mini-latest": {
           "id": "codex-mini-latest",
@@ -305,7 +312,10 @@
             "output": 6
           },
           "openWeights": false,
-          "releaseDate": "2025-05-16"
+          "releaseDate": "2025-05-16",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.1-codex-max": {
           "id": "gpt-5.1-codex-max",
@@ -322,7 +332,11 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13"
+          "releaseDate": "2025-11-13",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "gpt-4o-2024-05-13": {
           "id": "gpt-4o-2024-05-13",
@@ -338,7 +352,10 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2024-05-13"
+          "releaseDate": "2024-05-13",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.2-chat-latest": {
           "id": "gpt-5.2-chat-latest",
@@ -355,7 +372,10 @@
             "output": 14
           },
           "openWeights": false,
-          "releaseDate": "2025-12-11"
+          "releaseDate": "2025-12-11",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.2-codex": {
           "id": "gpt-5.2-codex",
@@ -372,7 +392,11 @@
             "output": 14
           },
           "openWeights": false,
-          "releaseDate": "2025-12-11"
+          "releaseDate": "2025-12-11",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "o3-deep-research": {
           "id": "o3-deep-research",
@@ -389,7 +413,10 @@
             "output": 40
           },
           "openWeights": false,
-          "releaseDate": "2024-06-26"
+          "releaseDate": "2024-06-26",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o1": {
           "id": "o1",
@@ -406,7 +433,10 @@
             "output": 60
           },
           "openWeights": false,
-          "releaseDate": "2024-12-05"
+          "releaseDate": "2024-12-05",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.1": {
           "id": "gpt-5.1",
@@ -440,7 +470,10 @@
             "output": 8
           },
           "openWeights": false,
-          "releaseDate": "2024-06-26"
+          "releaseDate": "2024-06-26",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.3-codex-spark": {
           "id": "gpt-5.3-codex-spark",
@@ -457,7 +490,10 @@
             "output": 14
           },
           "openWeights": false,
-          "releaseDate": "2026-02-05"
+          "releaseDate": "2026-02-05",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o3": {
           "id": "o3",
@@ -474,20 +510,10 @@
             "output": 8
           },
           "openWeights": false,
-          "releaseDate": "2025-04-16"
-        },
-        "text-embedding-3-small": {
-          "id": "text-embedding-3-small",
-          "name": "text-embedding-3-small",
-          "contextWindow": 8191,
-          "maxOutput": 1536,
-          "capabilities": [],
-          "cost": {
-            "input": 0.02,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2024-01-25"
+          "releaseDate": "2025-04-16",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4.1-nano": {
           "id": "gpt-4.1-nano",
@@ -503,20 +529,10 @@
             "output": 0.4
           },
           "openWeights": false,
-          "releaseDate": "2025-04-14"
-        },
-        "text-embedding-3-large": {
-          "id": "text-embedding-3-large",
-          "name": "text-embedding-3-large",
-          "contextWindow": 8191,
-          "maxOutput": 3072,
-          "capabilities": [],
-          "cost": {
-            "input": 0.13,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2024-01-25"
+          "releaseDate": "2025-04-14",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-3.5-turbo": {
           "id": "gpt-3.5-turbo",
@@ -529,7 +545,10 @@
             "output": 1.5
           },
           "openWeights": false,
-          "releaseDate": "2023-03-01"
+          "releaseDate": "2023-03-01",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.1-codex-mini": {
           "id": "gpt-5.1-codex-mini",
@@ -546,7 +565,11 @@
             "output": 2
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13"
+          "releaseDate": "2025-11-13",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "gpt-5.2": {
           "id": "gpt-5.2",
@@ -579,7 +602,10 @@
             "output": 8
           },
           "openWeights": false,
-          "releaseDate": "2025-04-14"
+          "releaseDate": "2025-04-14",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o3-pro": {
           "id": "o3-pro",
@@ -596,7 +622,10 @@
             "output": 80
           },
           "openWeights": false,
-          "releaseDate": "2025-06-10"
+          "releaseDate": "2025-06-10",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4-turbo": {
           "id": "gpt-4-turbo",
@@ -612,7 +641,10 @@
             "output": 30
           },
           "openWeights": false,
-          "releaseDate": "2023-11-06"
+          "releaseDate": "2023-11-06",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5": {
           "id": "gpt-5",
@@ -646,7 +678,10 @@
             "output": 4.4
           },
           "openWeights": false,
-          "releaseDate": "2025-04-16"
+          "releaseDate": "2025-04-16",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4.1-mini": {
           "id": "gpt-4.1-mini",
@@ -662,7 +697,10 @@
             "output": 1.6
           },
           "openWeights": false,
-          "releaseDate": "2025-04-14"
+          "releaseDate": "2025-04-14",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o1-preview": {
           "id": "o1-preview",
@@ -677,7 +715,10 @@
             "output": 60
           },
           "openWeights": false,
-          "releaseDate": "2024-09-12"
+          "releaseDate": "2024-09-12",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o1-pro": {
           "id": "o1-pro",
@@ -694,7 +735,10 @@
             "output": 600
           },
           "openWeights": false,
-          "releaseDate": "2025-03-19"
+          "releaseDate": "2025-03-19",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.1-codex": {
           "id": "gpt-5.1-codex",
@@ -711,7 +755,11 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13"
+          "releaseDate": "2025-11-13",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "gpt-5.2-pro": {
           "id": "gpt-5.2-pro",
@@ -728,7 +776,10 @@
             "output": 168
           },
           "openWeights": false,
-          "releaseDate": "2025-12-11"
+          "releaseDate": "2025-12-11",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o3-mini": {
           "id": "o3-mini",
@@ -744,7 +795,10 @@
             "output": 4.4
           },
           "openWeights": false,
-          "releaseDate": "2024-12-20"
+          "releaseDate": "2024-12-20",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4o-2024-08-06": {
           "id": "gpt-4o-2024-08-06",
@@ -760,7 +814,10 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2024-08-06"
+          "releaseDate": "2024-08-06",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5-mini": {
           "id": "gpt-5-mini",
@@ -777,7 +834,10 @@
             "output": 2
           },
           "openWeights": false,
-          "releaseDate": "2025-08-07"
+          "releaseDate": "2025-08-07",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5.1-chat-latest": {
           "id": "gpt-5.1-chat-latest",
@@ -794,7 +854,10 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13"
+          "releaseDate": "2025-11-13",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4": {
           "id": "gpt-4",
@@ -810,7 +873,10 @@
             "output": 60
           },
           "openWeights": false,
-          "releaseDate": "2023-11-06"
+          "releaseDate": "2023-11-06",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-5-nano": {
           "id": "gpt-5-nano",
@@ -827,7 +893,10 @@
             "output": 0.4
           },
           "openWeights": false,
-          "releaseDate": "2025-08-07"
+          "releaseDate": "2025-08-07",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "o1-mini": {
           "id": "o1-mini",
@@ -842,7 +911,10 @@
             "output": 4.4
           },
           "openWeights": false,
-          "releaseDate": "2024-09-12"
+          "releaseDate": "2024-09-12",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "gpt-4o": {
           "id": "gpt-4o",
@@ -858,7 +930,10 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2024-05-13"
+          "releaseDate": "2024-05-13",
+          "authSupport": [
+            "api_key"
+          ]
         }
       }
     },
@@ -896,7 +971,11 @@
             "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2025-11-01"
+          "releaseDate": "2025-11-01",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-5-haiku-latest": {
           "id": "claude-3-5-haiku-latest",
@@ -912,7 +991,11 @@
             "output": 4
           },
           "openWeights": false,
-          "releaseDate": "2024-10-22"
+          "releaseDate": "2024-10-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-1": {
           "id": "claude-opus-4-1",
@@ -929,7 +1012,11 @@
             "output": 75
           },
           "openWeights": false,
-          "releaseDate": "2025-08-05"
+          "releaseDate": "2025-08-05",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-5-sonnet-20241022": {
           "id": "claude-3-5-sonnet-20241022",
@@ -945,7 +1032,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2024-10-22"
+          "releaseDate": "2024-10-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-sonnet-20240229": {
           "id": "claude-3-sonnet-20240229",
@@ -961,7 +1052,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2024-03-04"
+          "releaseDate": "2024-03-04",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-6": {
           "id": "claude-opus-4-6",
@@ -978,7 +1073,11 @@
             "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2026-02-05"
+          "releaseDate": "2026-02-05",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-sonnet-4-6": {
           "id": "claude-sonnet-4-6",
@@ -995,7 +1094,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2026-02-17"
+          "releaseDate": "2026-02-17",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-sonnet-4-0": {
           "id": "claude-sonnet-4-0",
@@ -1012,7 +1115,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-05-22"
+          "releaseDate": "2025-05-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-20250514": {
           "id": "claude-opus-4-20250514",
@@ -1029,7 +1136,11 @@
             "output": 75
           },
           "openWeights": false,
-          "releaseDate": "2025-05-22"
+          "releaseDate": "2025-05-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-sonnet-4-5-20250929": {
           "id": "claude-sonnet-4-5-20250929",
@@ -1046,7 +1157,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-09-29"
+          "releaseDate": "2025-09-29",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-0": {
           "id": "claude-opus-4-0",
@@ -1063,7 +1178,11 @@
             "output": 75
           },
           "openWeights": false,
-          "releaseDate": "2025-05-22"
+          "releaseDate": "2025-05-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-5-haiku-20241022": {
           "id": "claude-3-5-haiku-20241022",
@@ -1079,7 +1198,11 @@
             "output": 4
           },
           "openWeights": false,
-          "releaseDate": "2024-10-22"
+          "releaseDate": "2024-10-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-5-sonnet-20240620": {
           "id": "claude-3-5-sonnet-20240620",
@@ -1095,7 +1218,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2024-06-20"
+          "releaseDate": "2024-06-20",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-7-sonnet-latest": {
           "id": "claude-3-7-sonnet-latest",
@@ -1112,7 +1239,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-02-19"
+          "releaseDate": "2025-02-19",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-7-sonnet-20250219": {
           "id": "claude-3-7-sonnet-20250219",
@@ -1129,7 +1260,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-02-19"
+          "releaseDate": "2025-02-19",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-haiku-20240307": {
           "id": "claude-3-haiku-20240307",
@@ -1145,7 +1280,11 @@
             "output": 1.25
           },
           "openWeights": false,
-          "releaseDate": "2024-03-13"
+          "releaseDate": "2024-03-13",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-haiku-4-5-20251001": {
           "id": "claude-haiku-4-5-20251001",
@@ -1162,7 +1301,11 @@
             "output": 5
           },
           "openWeights": false,
-          "releaseDate": "2025-10-15"
+          "releaseDate": "2025-10-15",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-haiku-4-5": {
           "id": "claude-haiku-4-5",
@@ -1179,7 +1322,11 @@
             "output": 5
           },
           "openWeights": false,
-          "releaseDate": "2025-10-15"
+          "releaseDate": "2025-10-15",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-5": {
           "id": "claude-opus-4-5",
@@ -1196,7 +1343,11 @@
             "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2025-11-24"
+          "releaseDate": "2025-11-24",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-3-opus-20240229": {
           "id": "claude-3-opus-20240229",
@@ -1212,7 +1363,11 @@
             "output": 75
           },
           "openWeights": false,
-          "releaseDate": "2024-02-29"
+          "releaseDate": "2024-02-29",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-sonnet-4-5": {
           "id": "claude-sonnet-4-5",
@@ -1229,7 +1384,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-09-29"
+          "releaseDate": "2025-09-29",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-sonnet-4-20250514": {
           "id": "claude-sonnet-4-20250514",
@@ -1246,7 +1405,11 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-05-22"
+          "releaseDate": "2025-05-22",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
         "claude-opus-4-1-20250805": {
           "id": "claude-opus-4-1-20250805",
@@ -1263,7 +1426,11 @@
             "output": 75
           },
           "openWeights": false,
-          "releaseDate": "2025-08-05"
+          "releaseDate": "2025-08-05",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         }
       }
     },
@@ -1296,7 +1463,10 @@
             "output": 0
           },
           "openWeights": false,
-          "releaseDate": "2026-02-11"
+          "releaseDate": "2026-02-11",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.7-flashx": {
           "id": "glm-4.7-flashx",
@@ -1312,7 +1482,10 @@
             "output": 0.4
           },
           "openWeights": true,
-          "releaseDate": "2026-01-19"
+          "releaseDate": "2026-01-19",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.5-air": {
           "id": "glm-4.5-air",
@@ -1328,7 +1501,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-07-28"
+          "releaseDate": "2025-07-28",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.5": {
           "id": "glm-4.5",
@@ -1344,7 +1520,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-07-28"
+          "releaseDate": "2025-07-28",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.5-flash": {
           "id": "glm-4.5-flash",
@@ -1360,7 +1539,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-07-28"
+          "releaseDate": "2025-07-28",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.7-flash": {
           "id": "glm-4.7-flash",
@@ -1376,7 +1558,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2026-01-19"
+          "releaseDate": "2026-01-19",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.6": {
           "id": "glm-4.6",
@@ -1392,7 +1577,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-09-30"
+          "releaseDate": "2025-09-30",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.7": {
           "id": "glm-4.7",
@@ -1408,7 +1596,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-12-22"
+          "releaseDate": "2025-12-22",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.5v": {
           "id": "glm-4.5v",
@@ -1425,7 +1616,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-08-11"
+          "releaseDate": "2025-08-11",
+          "authSupport": [
+            "api_key"
+          ]
         },
         "glm-4.6v": {
           "id": "glm-4.6v",
@@ -1442,7 +1636,10 @@
             "output": 0
           },
           "openWeights": true,
-          "releaseDate": "2025-12-08"
+          "releaseDate": "2025-12-08",
+          "authSupport": [
+            "api_key"
+          ]
         }
       }
     }

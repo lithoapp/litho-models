@@ -40,6 +40,26 @@ interface LithoModel {
   cost?: { input: number; output: number };
   openWeights?: boolean;
   releaseDate?: string;
+  authSupport?: string[];
+}
+
+// OpenAI Codex models — accessible via both API key and OAuth
+const OPENAI_CODEX_MODELS = new Set([
+  "gpt-5.3-codex",
+  "gpt-5-codex",
+  "gpt-5.1-codex-max",
+  "gpt-5.2-codex",
+  "gpt-5.1-codex-mini",
+  "gpt-5.1-codex",
+]);
+
+// OpenAI models accessible via both API key and OAuth — authSupport omitted (implies all)
+const OPENAI_BOTH_AUTH_MODELS = new Set(["gpt-5.1", "gpt-5.2", "gpt-5"]);
+
+function getOpenAIAuthSupport(modelId: string): string[] | undefined {
+  if (OPENAI_CODEX_MODELS.has(modelId)) return ["api_key", "oauth"];
+  if (OPENAI_BOTH_AUTH_MODELS.has(modelId)) return undefined;
+  return ["api_key"];
 }
 
 interface LithoProvider {
@@ -91,9 +111,24 @@ function transformProvider(
 ): LithoProvider {
   const models: Record<string, LithoModel> = {};
 
+  const providerAuthSupport = curated.authMethods
+    .map((am) => am.type)
+    .filter((t) => t !== "none") as string[];
+
   for (const [modelId, model] of Object.entries(sourceProvider.models)) {
     if (curated.onlyFreeModels && !isFreeModel(model)) continue;
-    models[modelId] = transformModel(model);
+    if (curated.id === "openai" && modelId.startsWith("text-embedding")) continue;
+
+    const lithoModel = transformModel(model);
+
+    if (curated.id === "openai") {
+      const authSupport = getOpenAIAuthSupport(modelId);
+      if (authSupport !== undefined) lithoModel.authSupport = authSupport;
+    } else if (providerAuthSupport.length > 0) {
+      lithoModel.authSupport = providerAuthSupport;
+    }
+
+    models[modelId] = lithoModel;
   }
 
   return {
