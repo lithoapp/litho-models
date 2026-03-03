@@ -12,6 +12,7 @@ export interface CuratedProvider {
   autoConnect: boolean;
   authMethods: AuthMethod[];
   internalProvider?: string;
+  baseUrl?: string;
   onlyFreeModels?: boolean;
   defaultModel: string;
 }
@@ -25,6 +26,7 @@ export const curatedProviders: CuratedProvider[] = [
     autoConnect: true,
     authMethods: [],
     internalProvider: "opencode",
+    baseUrl: "https://opencode.ai/zen/v1",
     onlyFreeModels: true,
     defaultModel: "minimax-m2.5-free",
   },
@@ -61,6 +63,7 @@ export const curatedProviders: CuratedProvider[] = [
     authMethods: [
       { type: "api_key", name: "API Key", description: "Z.AI API key from docs.z.ai" },
     ],
+    baseUrl: "https://api.z.ai/api/coding/paas/v4",
     defaultModel: "glm-4.7",
   },
 ];

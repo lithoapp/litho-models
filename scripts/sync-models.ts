@@ -107,7 +107,7 @@ function transformProvider(
       ...(am.description && { description: am.description }),
     })),
     ...(curated.internalProvider && { internalProvider: curated.internalProvider }),
-    ...(sourceProvider.api && { baseUrl: sourceProvider.api }),
+    ...((curated.baseUrl ?? sourceProvider.api) && { baseUrl: curated.baseUrl ?? sourceProvider.api }),
     defaultModel: curated.defaultModel,
     models,
   };
