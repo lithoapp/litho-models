@@ -1,6 +1,6 @@
 {
-  "version": "2026-03-03",
-  "generatedAt": "2026-03-03T15:39:58.606Z",
+  "version": "2026-03-06",
+  "generatedAt": "2026-03-06T23:38:57.841Z",
   "providers": {
     "free": {
       "id": "free",
@@ -12,87 +12,6 @@
       "baseUrl": "https://opencode.ai/zen/v1",
       "defaultModel": "minimax-m2.5-free",
       "models": {
-        "trinity-large-preview-free": {
-          "id": "trinity-large-preview-free",
-          "name": "Trinity Large Preview",
-          "contextWindow": 131072,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2026-01-28"
-        },
-        "kimi-k2.5-free": {
-          "id": "kimi-k2.5-free",
-          "name": "Kimi K2.5 Free",
-          "contextWindow": 262144,
-          "maxOutput": 262144,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2026-01-27"
-        },
-        "grok-code": {
-          "id": "grok-code",
-          "name": "Grok Code Fast 1",
-          "contextWindow": 256000,
-          "maxOutput": 256000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-20"
-        },
-        "minimax-m2.1-free": {
-          "id": "minimax-m2.1-free",
-          "name": "MiniMax M2.1 Free",
-          "contextWindow": 204800,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2025-12-23"
-        },
-        "glm-5-free": {
-          "id": "glm-5-free",
-          "name": "GLM-5 Free",
-          "contextWindow": 204800,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2026-02-11"
-        },
         "big-pickle": {
           "id": "big-pickle",
           "name": "Big Pickle",
@@ -124,39 +43,6 @@
           },
           "openWeights": true,
           "releaseDate": "2026-02-12"
-        },
-        "glm-4.7-free": {
-          "id": "glm-4.7-free",
-          "name": "GLM-4.7 Free",
-          "contextWindow": 204800,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2025-12-22"
-        },
-        "gpt-5-nano": {
-          "id": "gpt-5-nano",
-          "name": "GPT-5 Nano",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-07"
         }
       }
     },
@@ -702,6 +588,26 @@
             "api_key"
           ]
         },
+        "gpt-5.4": {
+          "id": "gpt-5.4",
+          "name": "GPT-5.4",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 2.5,
+            "output": 15
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-05",
+          "authSupport": [
+            "api_key"
+          ]
+        },
         "o1-preview": {
           "id": "o1-preview",
           "name": "o1-preview",
@@ -716,6 +622,26 @@
           },
           "openWeights": false,
           "releaseDate": "2024-09-12",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.4-pro": {
+          "id": "gpt-5.4-pro",
+          "name": "GPT-5.4 Pro",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 30,
+            "output": 180
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-05",
           "authSupport": [
             "api_key"
           ]

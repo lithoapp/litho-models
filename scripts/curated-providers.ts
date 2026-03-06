@@ -15,6 +15,7 @@ export interface CuratedProvider {
   baseUrl?: string;
   onlyFreeModels?: boolean;
   excludedModels?: string[];
+  allowedModels?: string[];
   defaultModel: string;
 }
 
@@ -29,6 +30,7 @@ export const curatedProviders: CuratedProvider[] = [
     internalProvider: "opencode",
     baseUrl: "https://opencode.ai/zen/v1",
     onlyFreeModels: true,
+    allowedModels: ["big-pickle", "minimax-m2.5-free"],
     defaultModel: "minimax-m2.5-free",
   },
   {
