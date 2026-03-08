@@ -1,6 +1,6 @@
 {
-  "version": "2026-03-06",
-  "generatedAt": "2026-03-06T23:38:57.841Z",
+  "version": "2026-03-08",
+  "generatedAt": "2026-03-08T19:16:59.628Z",
   "providers": {
     "free": {
       "id": "free",
@@ -60,7 +60,10 @@
         {
           "type": "oauth",
           "name": "OAuth",
-          "description": "OAuth for Codex integration"
+          "description": "OAuth for Codex integration",
+          "oauth": {
+            "clientId": "app_EMoamEEZ73f0CkXaXp7hrann"
+          }
         }
       ],
       "defaultModel": "gpt-5.3-codex",
@@ -603,10 +606,7 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2026-03-05",
-          "authSupport": [
-            "api_key"
-          ]
+          "releaseDate": "2026-03-05"
         },
         "o1-preview": {
           "id": "o1-preview",
@@ -877,7 +877,10 @@
         {
           "type": "oauth",
           "name": "OAuth",
-          "description": "OAuth for Claude Code integration"
+          "description": "OAuth for Claude Code integration",
+          "oauth": {
+            "clientId": "9d1c250a-e61b-44d9-88ed-5944d1962f5e"
+          }
         }
       ],
       "defaultModel": "claude-sonnet-4-6",
@@ -1206,7 +1209,7 @@
             "input": 0,
             "output": 0
           },
-          "openWeights": false,
+          "openWeights": true,
           "releaseDate": "2026-02-11",
           "authSupport": [
             "api_key"

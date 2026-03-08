@@ -1,7 +1,12 @@
+export interface OAuthConfig {
+  clientId: string;
+}
+
 export interface AuthMethod {
   type: "api_key" | "oauth" | "none";
   name: string;
   description?: string;
+  oauth?: OAuthConfig;
 }
 
 export interface CuratedProvider {
@@ -41,7 +46,7 @@ export const curatedProviders: CuratedProvider[] = [
     autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "OpenAI API key from platform.openai.com" },
-      { type: "oauth", name: "OAuth", description: "OAuth for Codex integration" },
+      { type: "oauth", name: "OAuth", description: "OAuth for Codex integration", oauth: { clientId: "app_EMoamEEZ73f0CkXaXp7hrann" } },
     ],
     defaultModel: "gpt-5.3-codex",
   },
@@ -53,7 +58,7 @@ export const curatedProviders: CuratedProvider[] = [
     autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "Anthropic API key from console.anthropic.com" },
-      { type: "oauth", name: "OAuth", description: "OAuth for Claude Code integration" },
+      { type: "oauth", name: "OAuth", description: "OAuth for Claude Code integration", oauth: { clientId: "9d1c250a-e61b-44d9-88ed-5944d1962f5e" } },
     ],
     excludedModels: [
       "claude-3-5-sonnet-20241022",

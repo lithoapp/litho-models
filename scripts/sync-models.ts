@@ -54,7 +54,7 @@ const OPENAI_CODEX_MODELS = new Set([
 ]);
 
 // OpenAI models accessible via both API key and OAuth — authSupport omitted (implies all)
-const OPENAI_BOTH_AUTH_MODELS = new Set(["gpt-5.1", "gpt-5.2", "gpt-5"]);
+const OPENAI_BOTH_AUTH_MODELS = new Set(["gpt-5", "gpt-5.1", "gpt-5.2", "gpt-5.4"]);
 
 function getOpenAIAuthSupport(modelId: string): string[] | undefined {
   if (OPENAI_CODEX_MODELS.has(modelId)) return ["api_key", "oauth"];
@@ -67,7 +67,7 @@ interface LithoProvider {
   name: string;
   description: string;
   autoConnect: boolean;
-  authMethods: { type: string; name: string; description?: string }[];
+  authMethods: { type: string; name: string; description?: string; oauth?: { clientId: string } }[];
   internalProvider?: string;
   baseUrl?: string;
   defaultModel: string;
@@ -142,6 +142,7 @@ function transformProvider(
       type: am.type,
       name: am.name,
       ...(am.description && { description: am.description }),
+      ...(am.oauth && { oauth: am.oauth }),
     })),
     ...(curated.internalProvider && { internalProvider: curated.internalProvider }),
     ...((curated.baseUrl ?? sourceProvider.api) && { baseUrl: curated.baseUrl ?? sourceProvider.api }),
