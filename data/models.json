@@ -1,6 +1,6 @@
 {
-  "version": "2026-03-08",
-  "generatedAt": "2026-03-08T19:16:59.628Z",
+  "version": "2026-03-15",
+  "generatedAt": "2026-03-15T11:29:17.434Z",
   "providers": {
     "free": {
       "id": "free",
@@ -12,6 +12,38 @@
       "baseUrl": "https://opencode.ai/zen/v1",
       "defaultModel": "minimax-m2.5-free",
       "models": {
+        "nemotron-3-super-free": {
+          "id": "nemotron-3-super-free",
+          "name": "Nemotron 3 Super Free",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2026-03-11"
+        },
+        "mimo-v2-flash-free": {
+          "id": "mimo-v2-flash-free",
+          "name": "MiMo V2 Flash Free",
+          "contextWindow": 262144,
+          "maxOutput": 65536,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2025-12-16"
+        },
         "big-pickle": {
           "id": "big-pickle",
           "name": "Big Pickle",
@@ -930,7 +962,7 @@
         "claude-opus-4-6": {
           "id": "claude-opus-4-6",
           "name": "Claude Opus 4.6",
-          "contextWindow": 200000,
+          "contextWindow": 1000000,
           "maxOutput": 128000,
           "capabilities": [
             "tool_call",
@@ -951,7 +983,7 @@
         "claude-sonnet-4-6": {
           "id": "claude-sonnet-4-6",
           "name": "Claude Sonnet 4.6",
-          "contextWindow": 200000,
+          "contextWindow": 1000000,
           "maxOutput": 64000,
           "capabilities": [
             "tool_call",
