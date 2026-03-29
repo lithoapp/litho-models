@@ -85,6 +85,7 @@ function deriveCapabilities(model: ModelsDevModel): string[] {
   if (model.tool_call) capabilities.push("tool_call");
   if (model.attachment) capabilities.push("attachment");
   if (model.reasoning) capabilities.push("reasoning");
+  if (model.modalities?.input?.includes("image")) capabilities.push("vision");
   return capabilities;
 }
 
