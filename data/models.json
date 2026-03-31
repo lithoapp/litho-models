@@ -1,6 +1,6 @@
 {
-  "version": "2026-03-29",
-  "generatedAt": "2026-03-29T18:17:46.909Z",
+  "version": "2026-03-31",
+  "generatedAt": "2026-03-31T16:37:00.971Z",
   "providers": {
     "free": {
       "id": "free",
@@ -569,6 +569,26 @@
             "api_key"
           ]
         },
+        "gpt-5.3-chat-latest": {
+          "id": "gpt-5.3-chat-latest",
+          "name": "GPT-5.3 Chat (latest)",
+          "contextWindow": 128000,
+          "maxOutput": 16384,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "vision"
+          ],
+          "cost": {
+            "input": 1.75,
+            "output": 14
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-03",
+          "authSupport": [
+            "api_key"
+          ]
+        },
         "gpt-5.4-nano": {
           "id": "gpt-5.4-nano",
           "name": "GPT-5.4 nano",
@@ -982,14 +1002,6 @@
           "type": "api_key",
           "name": "API Key",
           "description": "Anthropic API key from console.anthropic.com"
-        },
-        {
-          "type": "oauth",
-          "name": "OAuth",
-          "description": "OAuth for Claude Code integration",
-          "oauth": {
-            "clientId": "9d1c250a-e61b-44d9-88ed-5944d1962f5e"
-          }
         }
       ],
       "defaultModel": "claude-sonnet-4-6",
@@ -1012,8 +1024,7 @@
           "openWeights": false,
           "releaseDate": "2025-11-01",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-20250514": {
@@ -1034,8 +1045,7 @@
           "openWeights": false,
           "releaseDate": "2025-05-22",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-5": {
@@ -1056,8 +1066,7 @@
           "openWeights": false,
           "releaseDate": "2025-11-24",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-6": {
@@ -1078,8 +1087,7 @@
           "openWeights": false,
           "releaseDate": "2026-02-05",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-sonnet-4-5-20250929": {
@@ -1100,8 +1108,7 @@
           "openWeights": false,
           "releaseDate": "2025-09-29",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-sonnet-4-6": {
@@ -1122,8 +1129,7 @@
           "openWeights": false,
           "releaseDate": "2026-02-17",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-sonnet-4-0": {
@@ -1144,8 +1150,7 @@
           "openWeights": false,
           "releaseDate": "2025-05-22",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-sonnet-4-20250514": {
@@ -1166,8 +1171,7 @@
           "openWeights": false,
           "releaseDate": "2025-05-22",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-1": {
@@ -1188,8 +1192,7 @@
           "openWeights": false,
           "releaseDate": "2025-08-05",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-1-20250805": {
@@ -1210,8 +1213,7 @@
           "openWeights": false,
           "releaseDate": "2025-08-05",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-opus-4-0": {
@@ -1232,8 +1234,7 @@
           "openWeights": false,
           "releaseDate": "2025-05-22",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-haiku-4-5-20251001": {
@@ -1254,8 +1255,7 @@
           "openWeights": false,
           "releaseDate": "2025-10-15",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-sonnet-4-5": {
@@ -1276,8 +1276,7 @@
           "openWeights": false,
           "releaseDate": "2025-09-29",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         },
         "claude-haiku-4-5": {
@@ -1298,8 +1297,7 @@
           "openWeights": false,
           "releaseDate": "2025-10-15",
           "authSupport": [
-            "api_key",
-            "oauth"
+            "api_key"
           ]
         }
       }

@@ -58,7 +58,6 @@ export const curatedProviders: CuratedProvider[] = [
     autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "Anthropic API key from console.anthropic.com" },
-      { type: "oauth", name: "OAuth", description: "OAuth for Claude Code integration", oauth: { clientId: "9d1c250a-e61b-44d9-88ed-5944d1962f5e" } },
     ],
     excludedModels: [
       "claude-3-5-sonnet-20241022",
