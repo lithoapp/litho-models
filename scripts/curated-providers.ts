@@ -35,7 +35,7 @@ export const curatedProviders: CuratedProvider[] = [
     internalProvider: "opencode",
     baseUrl: "https://opencode.ai/zen/v1",
     onlyFreeModels: true,
-    allowedModels: ["big-pickle", "minimax-m2.5-free", "mimo-v2-flash-free", "nemotron-3-super-free"],
+    allowedModels: ["big-pickle", "minimax-m2.5-free", "nemotron-3-super-free"],
     defaultModel: "minimax-m2.5-free",
   },
   {
