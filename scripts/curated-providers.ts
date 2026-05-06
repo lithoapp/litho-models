@@ -51,6 +51,18 @@ export const curatedProviders: CuratedProvider[] = [
     defaultModel: "gpt-5.3-codex",
   },
   {
+    id: "deepseek",
+    sourceProvider: "deepseek",
+    name: "DeepSeek",
+    description: "DeepSeek V4 models with your DeepSeek API key",
+    autoConnect: false,
+    authMethods: [
+      { type: "api_key", name: "API Key", description: "DeepSeek API key from platform.deepseek.com" },
+    ],
+    allowedModels: ["deepseek-v4-flash", "deepseek-v4-pro"],
+    defaultModel: "deepseek-v4-flash",
+  },
+  {
     id: "anthropic",
     sourceProvider: "anthropic",
     name: "Anthropic",
