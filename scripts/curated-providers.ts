@@ -14,11 +14,8 @@ export interface CuratedProvider {
   sourceProvider: string;
   name: string;
   description: string;
-  autoConnect: boolean;
   authMethods: AuthMethod[];
-  internalProvider?: string;
   baseUrl?: string;
-  onlyFreeModels?: boolean;
   excludedModels?: string[];
   allowedModels?: string[];
   defaultModel: string;
@@ -26,36 +23,23 @@ export interface CuratedProvider {
 
 export const curatedProviders: CuratedProvider[] = [
   {
-    id: "free",
-    sourceProvider: "opencode",
-    name: "Free Models",
-    description: "No setup required — free models ready to use",
-    autoConnect: true,
-    authMethods: [],
-    internalProvider: "opencode",
-    baseUrl: "https://opencode.ai/zen/v1",
-    onlyFreeModels: true,
-    allowedModels: ["big-pickle", "minimax-m2.5-free", "nemotron-3-super-free"],
-    defaultModel: "minimax-m2.5-free",
-  },
-  {
     id: "openai",
     sourceProvider: "openai",
     name: "OpenAI",
     description: "GPT and Codex models from OpenAI",
-    autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "OpenAI API key from platform.openai.com" },
       { type: "oauth", name: "OAuth", description: "OAuth for Codex integration", oauth: { clientId: "app_EMoamEEZ73f0CkXaXp7hrann" } },
     ],
-    defaultModel: "gpt-5.3-codex",
+    // Retired from the Codex backend and never served by the public API.
+    excludedModels: ["gpt-5.3-codex", "gpt-5.3-codex-spark", "gpt-realtime-2.1"],
+    defaultModel: "gpt-5.6-sol",
   },
   {
     id: "deepseek",
     sourceProvider: "deepseek",
     name: "DeepSeek",
     description: "DeepSeek V4 models with your DeepSeek API key",
-    autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "DeepSeek API key from platform.deepseek.com" },
     ],
@@ -67,7 +51,6 @@ export const curatedProviders: CuratedProvider[] = [
     sourceProvider: "anthropic",
     name: "Anthropic",
     description: "Claude models from Anthropic",
-    autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "Anthropic API key from console.anthropic.com" },
     ],
@@ -89,7 +72,6 @@ export const curatedProviders: CuratedProvider[] = [
     sourceProvider: "zai-coding-plan",
     name: "Z.AI",
     description: "GLM models from Z.AI Coding Plan — all free",
-    autoConnect: false,
     authMethods: [
       { type: "api_key", name: "API Key", description: "Z.AI API key from docs.z.ai" },
     ],

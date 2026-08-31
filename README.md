@@ -70,18 +70,18 @@ make deploy
 
 ## Curated Providers
 
-| Provider ID | Display Name | Auth Methods | Auto-Connect | Models |
-|-------------|--------------|--------------|--------------|--------|
-| `free` | Free Models | None | Yes | 9 |
-| `openai` | OpenAI | API Key, OAuth | No | 42 |
-| `anthropic` | Anthropic | API Key, OAuth | No | 23 |
-| `zai-coding-plan` | Z.AI | API Key | No | 10 |
+| Provider ID | Display Name | Auth Methods | Models |
+|-------------|--------------|--------------|--------|
+| `openai` | OpenAI | API Key, OAuth | 49 |
+| `deepseek` | DeepSeek | API Key | 2 |
+| `anthropic` | Anthropic | API Key | 15 |
+| `zai-coding-plan` | Z.AI | API Key | 5 |
 
 ### Adding/Modifying Providers
 
 Edit `scripts/curated-providers.ts` to:
 - Add new providers (set `sourceProvider` to the models.dev provider ID)
-- Configure `onlyFreeModels: true` to filter to free models only
+- Restrict the exposed model set with `allowedModels` / `excludedModels`
 - Change auth methods or descriptions
 
 ## Schema
@@ -97,9 +97,7 @@ Edit `scripts/curated-providers.ts` to:
       "id": "string",
       "name": "string",
       "description": "string",
-      "autoConnect": boolean,
       "authMethods": [{ "type": "api_key|oauth|none", "name": "string" }],
-      "internalProvider": "string (optional)",
       "defaultModel": "string",
       "models": {
         "<model-id>": {

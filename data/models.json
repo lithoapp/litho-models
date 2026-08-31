@@ -1,72 +1,11 @@
 {
-  "version": "2026-05-06",
-  "generatedAt": "2026-05-06T08:10:36.661Z",
+  "version": "2026-08-31",
+  "generatedAt": "2026-08-31T07:07:20.996Z",
   "providers": {
-    "free": {
-      "id": "free",
-      "name": "Free Models",
-      "description": "No setup required — free models ready to use",
-      "autoConnect": true,
-      "authMethods": [],
-      "internalProvider": "opencode",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "defaultModel": "minimax-m2.5-free",
-      "models": {
-        "minimax-m2.5-free": {
-          "id": "minimax-m2.5-free",
-          "name": "MiniMax M2.5 Free",
-          "contextWindow": 204800,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2026-02-12"
-        },
-        "big-pickle": {
-          "id": "big-pickle",
-          "name": "Big Pickle",
-          "contextWindow": 200000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2025-10-17"
-        },
-        "nemotron-3-super-free": {
-          "id": "nemotron-3-super-free",
-          "name": "Nemotron 3 Super Free",
-          "contextWindow": 204800,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2026-03-11"
-        }
-      }
-    },
     "openai": {
       "id": "openai",
       "name": "OpenAI",
       "description": "GPT and Codex models from OpenAI",
-      "autoConnect": false,
       "authMethods": [
         {
           "type": "api_key",
@@ -82,85 +21,24 @@
           }
         }
       ],
-      "defaultModel": "gpt-5.3-codex",
+      "defaultModel": "gpt-5.6-sol",
       "models": {
-        "gpt-5.1-codex-max": {
-          "id": "gpt-5.1-codex-max",
-          "name": "GPT-5.1 Codex Max",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
+        "gpt-4o": {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "contextWindow": 128000,
+          "maxOutput": 16384,
           "capabilities": [
             "tool_call",
             "attachment",
-            "reasoning",
             "vision"
           ],
           "cost": {
-            "input": 1.25,
+            "input": 2.5,
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "gpt-4o-2024-05-13": {
-          "id": "gpt-4o-2024-05-13",
-          "name": "GPT-4o (2024-05-13)",
-          "contextWindow": 128000,
-          "maxOutput": 4096,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "vision"
-          ],
-          "cost": {
-            "input": 5,
-            "output": 15
-          },
-          "openWeights": false,
           "releaseDate": "2024-05-13",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o1-mini": {
-          "id": "o1-mini",
-          "name": "o1-mini",
-          "contextWindow": 128000,
-          "maxOutput": 65536,
-          "capabilities": [
-            "reasoning"
-          ],
-          "cost": {
-            "input": 1.1,
-            "output": 4.4
-          },
-          "openWeights": false,
-          "releaseDate": "2024-09-12",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.2-pro": {
-          "id": "gpt-5.2-pro",
-          "name": "GPT-5.2 Pro",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 21,
-            "output": 168
-          },
-          "openWeights": false,
-          "releaseDate": "2025-12-11",
           "authSupport": [
             "api_key"
           ]
@@ -181,45 +59,6 @@
           },
           "openWeights": false,
           "releaseDate": "2026-03-03",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.5": {
-          "id": "gpt-5.5",
-          "name": "GPT-5.5",
-          "contextWindow": 1050000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 5,
-            "output": 30
-          },
-          "openWeights": false,
-          "releaseDate": "2026-04-23"
-        },
-        "gpt-5-mini": {
-          "id": "gpt-5-mini",
-          "name": "GPT-5 Mini",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 0.25,
-            "output": 2
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-07",
           "authSupport": [
             "api_key"
           ]
@@ -245,87 +84,6 @@
             "api_key"
           ]
         },
-        "gpt-5.3-codex": {
-          "id": "gpt-5.3-codex",
-          "name": "GPT-5.3 Codex",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.75,
-            "output": 14
-          },
-          "openWeights": false,
-          "releaseDate": "2026-02-05",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "gpt-4-turbo": {
-          "id": "gpt-4-turbo",
-          "name": "GPT-4 Turbo",
-          "contextWindow": 128000,
-          "maxOutput": 4096,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "vision"
-          ],
-          "cost": {
-            "input": 10,
-            "output": 30
-          },
-          "openWeights": false,
-          "releaseDate": "2023-11-06",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.2": {
-          "id": "gpt-5.2",
-          "name": "GPT-5.2",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.75,
-            "output": 14
-          },
-          "openWeights": false,
-          "releaseDate": "2025-12-11"
-        },
-        "o3-pro": {
-          "id": "o3-pro",
-          "name": "o3-pro",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 20,
-            "output": 80
-          },
-          "openWeights": false,
-          "releaseDate": "2025-06-10",
-          "authSupport": [
-            "api_key"
-          ]
-        },
         "gpt-4o-mini": {
           "id": "gpt-4o-mini",
           "name": "GPT-4o mini",
@@ -342,339 +100,6 @@
           },
           "openWeights": false,
           "releaseDate": "2024-07-18",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o4-mini-deep-research": {
-          "id": "o4-mini-deep-research",
-          "name": "o4-mini-deep-research",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 2,
-            "output": 8
-          },
-          "openWeights": false,
-          "releaseDate": "2024-06-26",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.4-mini": {
-          "id": "gpt-5.4-mini",
-          "name": "GPT-5.4 mini",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 0.75,
-            "output": 4.5
-          },
-          "openWeights": false,
-          "releaseDate": "2026-03-17",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o4-mini": {
-          "id": "o4-mini",
-          "name": "o4-mini",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.1,
-            "output": 4.4
-          },
-          "openWeights": false,
-          "releaseDate": "2025-04-16",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.4-nano": {
-          "id": "gpt-5.4-nano",
-          "name": "GPT-5.4 nano",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 0.2,
-            "output": 1.25
-          },
-          "openWeights": false,
-          "releaseDate": "2026-03-17",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-image-1": {
-          "id": "gpt-image-1",
-          "name": "gpt-image-1",
-          "contextWindow": 0,
-          "maxOutput": 0,
-          "capabilities": [
-            "attachment",
-            "vision"
-          ],
-          "openWeights": false,
-          "releaseDate": "2025-04-24",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.2-codex": {
-          "id": "gpt-5.2-codex",
-          "name": "GPT-5.2 Codex",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.75,
-            "output": 14
-          },
-          "openWeights": false,
-          "releaseDate": "2025-12-11",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "gpt-5.2-chat-latest": {
-          "id": "gpt-5.2-chat-latest",
-          "name": "GPT-5.2 Chat",
-          "contextWindow": 128000,
-          "maxOutput": 16384,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.75,
-            "output": 14
-          },
-          "openWeights": false,
-          "releaseDate": "2025-12-11",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.1-codex-mini": {
-          "id": "gpt-5.1-codex-mini",
-          "name": "GPT-5.1 Codex mini",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 0.25,
-            "output": 2
-          },
-          "openWeights": false,
-          "releaseDate": "2025-11-13",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "o1-preview": {
-          "id": "o1-preview",
-          "name": "o1-preview",
-          "contextWindow": 128000,
-          "maxOutput": 32768,
-          "capabilities": [
-            "reasoning"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 60
-          },
-          "openWeights": false,
-          "releaseDate": "2024-09-12",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-4o-2024-08-06": {
-          "id": "gpt-4o-2024-08-06",
-          "name": "GPT-4o (2024-08-06)",
-          "contextWindow": 128000,
-          "maxOutput": 16384,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "vision"
-          ],
-          "cost": {
-            "input": 2.5,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2024-08-06",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.1": {
-          "id": "gpt-5.1",
-          "name": "GPT-5.1",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.25,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2025-11-13"
-        },
-        "gpt-image-1-mini": {
-          "id": "gpt-image-1-mini",
-          "name": "gpt-image-1-mini",
-          "contextWindow": 0,
-          "maxOutput": 0,
-          "capabilities": [
-            "attachment",
-            "vision"
-          ],
-          "openWeights": false,
-          "releaseDate": "2025-09-26",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o1": {
-          "id": "o1",
-          "name": "o1",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 60
-          },
-          "openWeights": false,
-          "releaseDate": "2024-12-05",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.4-pro": {
-          "id": "gpt-5.4-pro",
-          "name": "GPT-5.4 Pro",
-          "contextWindow": 1050000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 30,
-            "output": 180
-          },
-          "openWeights": false,
-          "releaseDate": "2026-03-05",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-3.5-turbo": {
-          "id": "gpt-3.5-turbo",
-          "name": "GPT-3.5-turbo",
-          "contextWindow": 16385,
-          "maxOutput": 4096,
-          "capabilities": [],
-          "cost": {
-            "input": 0.5,
-            "output": 1.5
-          },
-          "openWeights": false,
-          "releaseDate": "2023-03-01",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o3-deep-research": {
-          "id": "o3-deep-research",
-          "name": "o3-deep-research",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 10,
-            "output": 40
-          },
-          "openWeights": false,
-          "releaseDate": "2024-06-26",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "o3-mini": {
-          "id": "o3-mini",
-          "name": "o3-mini",
-          "contextWindow": 200000,
-          "maxOutput": 100000,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 1.1,
-            "output": 4.4
-          },
-          "openWeights": false,
-          "releaseDate": "2024-12-20",
           "authSupport": [
             "api_key"
           ]
@@ -700,6 +125,47 @@
             "api_key"
           ]
         },
+        "gpt-5.5-pro": {
+          "id": "gpt-5.5-pro",
+          "name": "GPT-5.5 Pro",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 30,
+            "output": 180
+          },
+          "openWeights": false,
+          "releaseDate": "2026-04-23",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-4-turbo": {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "contextWindow": 128000,
+          "maxOutput": 4096,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "vision"
+          ],
+          "cost": {
+            "input": 10,
+            "output": 30
+          },
+          "openWeights": false,
+          "releaseDate": "2023-11-06",
+          "authSupport": [
+            "api_key"
+          ]
+        },
         "gpt-4": {
           "id": "gpt-4",
           "name": "GPT-4",
@@ -719,30 +185,9 @@
             "api_key"
           ]
         },
-        "gpt-5-codex": {
-          "id": "gpt-5-codex",
-          "name": "GPT-5-Codex",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.25,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2025-09-15",
-          "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "gpt-5.4": {
-          "id": "gpt-5.4",
-          "name": "GPT-5.4",
+        "gpt-5.6-sol": {
+          "id": "gpt-5.6-sol",
+          "name": "GPT-5.6 Sol",
           "contextWindow": 1050000,
           "maxOutput": 128000,
           "capabilities": [
@@ -752,17 +197,63 @@
             "vision"
           ],
           "cost": {
-            "input": 2.5,
-            "output": 15
+            "input": 4,
+            "output": 20
           },
           "openWeights": false,
-          "releaseDate": "2026-03-05"
+          "releaseDate": "2026-07-09",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
         },
-        "gpt-5.1-chat-latest": {
-          "id": "gpt-5.1-chat-latest",
-          "name": "GPT-5.1 Chat",
-          "contextWindow": 128000,
-          "maxOutput": 16384,
+        "o3-pro": {
+          "id": "o3-pro",
+          "name": "o3-pro",
+          "contextWindow": 200000,
+          "maxOutput": 100000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 20,
+            "output": 80
+          },
+          "openWeights": false,
+          "releaseDate": "2025-06-10",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.4-pro": {
+          "id": "gpt-5.4-pro",
+          "name": "GPT-5.4 Pro",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 30,
+            "output": 180
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-05",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5": {
+          "id": "gpt-5",
+          "name": "GPT-5",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
           "capabilities": [
             "tool_call",
             "attachment",
@@ -774,16 +265,16 @@
             "output": 10
           },
           "openWeights": false,
-          "releaseDate": "2025-11-13",
+          "releaseDate": "2025-08-07",
           "authSupport": [
             "api_key"
           ]
         },
-        "gpt-5.3-codex-spark": {
-          "id": "gpt-5.3-codex-spark",
-          "name": "GPT-5.3 Codex Spark",
-          "contextWindow": 128000,
-          "maxOutput": 32000,
+        "gpt-5.6": {
+          "id": "gpt-5.6",
+          "name": "GPT-5.6",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
           "capabilities": [
             "tool_call",
             "attachment",
@@ -791,28 +282,56 @@
             "vision"
           ],
           "cost": {
-            "input": 1.75,
-            "output": 14
+            "input": 4,
+            "output": 20
           },
           "openWeights": false,
-          "releaseDate": "2026-02-05",
+          "releaseDate": "2026-07-09",
           "authSupport": [
             "api_key"
           ]
         },
-        "chatgpt-image-latest": {
-          "id": "chatgpt-image-latest",
-          "name": "chatgpt-image-latest",
-          "contextWindow": 0,
-          "maxOutput": 0,
+        "gpt-5-mini": {
+          "id": "gpt-5-mini",
+          "name": "GPT-5 Mini",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
           "capabilities": [
+            "tool_call",
             "attachment",
+            "reasoning",
             "vision"
           ],
+          "cost": {
+            "input": 0.25,
+            "output": 2
+          },
           "openWeights": false,
-          "releaseDate": "2025-12-16",
+          "releaseDate": "2025-08-07",
           "authSupport": [
             "api_key"
+          ]
+        },
+        "gpt-5.6-luna": {
+          "id": "gpt-5.6-luna",
+          "name": "GPT-5.6 Luna",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 0.2,
+            "output": 1.2
+          },
+          "openWeights": false,
+          "releaseDate": "2026-07-09",
+          "authSupport": [
+            "api_key",
+            "oauth"
           ]
         },
         "gpt-4.1-nano": {
@@ -831,6 +350,89 @@
           },
           "openWeights": false,
           "releaseDate": "2025-04-14",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "o1": {
+          "id": "o1",
+          "name": "o1",
+          "contextWindow": 200000,
+          "maxOutput": 100000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 15,
+            "output": 60
+          },
+          "openWeights": false,
+          "releaseDate": "2024-12-05",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "name": "GPT-5.2",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 1.75,
+            "output": 14
+          },
+          "openWeights": false,
+          "releaseDate": "2025-12-11",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.4-mini": {
+          "id": "gpt-5.4-mini",
+          "name": "GPT-5.4 mini",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 0.75,
+            "output": 4.5
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-17",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-4o-2024-05-13": {
+          "id": "gpt-4o-2024-05-13",
+          "name": "GPT-4o (2024-05-13)",
+          "contextWindow": 128000,
+          "maxOutput": 4096,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "vision"
+          ],
+          "cost": {
+            "input": 5,
+            "output": 15
+          },
+          "openWeights": false,
+          "releaseDate": "2024-05-13",
           "authSupport": [
             "api_key"
           ]
@@ -877,82 +479,9 @@
             "api_key"
           ]
         },
-        "gpt-4o": {
-          "id": "gpt-4o",
-          "name": "GPT-4o",
-          "contextWindow": 128000,
-          "maxOutput": 16384,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "vision"
-          ],
-          "cost": {
-            "input": 2.5,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2024-05-13",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5": {
-          "id": "gpt-5",
-          "name": "GPT-5",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.25,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-07"
-        },
-        "gpt-5-chat-latest": {
-          "id": "gpt-5-chat-latest",
-          "name": "GPT-5 Chat (latest)",
-          "contextWindow": 400000,
-          "maxOutput": 128000,
-          "capabilities": [
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1.25,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-07",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-image-1.5": {
-          "id": "gpt-image-1.5",
-          "name": "gpt-image-1.5",
-          "contextWindow": 0,
-          "maxOutput": 0,
-          "capabilities": [
-            "attachment",
-            "vision"
-          ],
-          "openWeights": false,
-          "releaseDate": "2025-11-25",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "gpt-5.5-pro": {
-          "id": "gpt-5.5-pro",
-          "name": "GPT-5.5 Pro",
+        "gpt-5.5": {
+          "id": "gpt-5.5",
+          "name": "GPT-5.5",
           "contextWindow": 1050000,
           "maxOutput": 128000,
           "capabilities": [
@@ -962,13 +491,14 @@
             "vision"
           ],
           "cost": {
-            "input": 30,
-            "output": 180
+            "input": 5,
+            "output": 30
           },
           "openWeights": false,
           "releaseDate": "2026-04-23",
           "authSupport": [
-            "api_key"
+            "api_key",
+            "oauth"
           ]
         },
         "gpt-4.1": {
@@ -987,6 +517,171 @@
           },
           "openWeights": false,
           "releaseDate": "2025-04-14",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-4o-2024-08-06": {
+          "id": "gpt-4o-2024-08-06",
+          "name": "GPT-4o (2024-08-06)",
+          "contextWindow": 128000,
+          "maxOutput": 16384,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "vision"
+          ],
+          "cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "openWeights": false,
+          "releaseDate": "2024-08-06",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.6-terra": {
+          "id": "gpt-5.6-terra",
+          "name": "GPT-5.6 Terra",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 2,
+            "output": 12
+          },
+          "openWeights": false,
+          "releaseDate": "2026-07-09",
+          "authSupport": [
+            "api_key",
+            "oauth"
+          ]
+        },
+        "o4-mini": {
+          "id": "o4-mini",
+          "name": "o4-mini",
+          "contextWindow": 200000,
+          "maxOutput": 100000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 1.1,
+            "output": 4.4
+          },
+          "openWeights": false,
+          "releaseDate": "2025-04-16",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.4": {
+          "id": "gpt-5.4",
+          "name": "GPT-5.4",
+          "contextWindow": 1050000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 2.5,
+            "output": 15
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-05",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "o3-mini": {
+          "id": "o3-mini",
+          "name": "o3-mini",
+          "contextWindow": 200000,
+          "maxOutput": 100000,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 1.1,
+            "output": 4.4
+          },
+          "openWeights": false,
+          "releaseDate": "2024-12-20",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-4o-2024-11-20": {
+          "id": "gpt-4o-2024-11-20",
+          "name": "GPT-4o (2024-11-20)",
+          "contextWindow": 128000,
+          "maxOutput": 16384,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "vision"
+          ],
+          "cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "openWeights": false,
+          "releaseDate": "2024-11-20",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.2-chat-latest": {
+          "id": "gpt-5.2-chat-latest",
+          "name": "GPT-5.2 Chat",
+          "contextWindow": 128000,
+          "maxOutput": 16384,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 1.75,
+            "output": 14
+          },
+          "openWeights": false,
+          "releaseDate": "2025-12-11",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.2-pro": {
+          "id": "gpt-5.2-pro",
+          "name": "GPT-5.2 Pro",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 21,
+            "output": 168
+          },
+          "openWeights": false,
+          "releaseDate": "2025-12-11",
           "authSupport": [
             "api_key"
           ]
@@ -1011,9 +706,30 @@
             "api_key"
           ]
         },
-        "gpt-5.1-codex": {
-          "id": "gpt-5.1-codex",
-          "name": "GPT-5.1 Codex",
+        "gpt-5.4-nano": {
+          "id": "gpt-5.4-nano",
+          "name": "GPT-5.4 nano",
+          "contextWindow": 400000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 0.2,
+            "output": 1.25
+          },
+          "openWeights": false,
+          "releaseDate": "2026-03-17",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "gpt-5.1": {
+          "id": "gpt-5.1",
+          "name": "GPT-5.1",
           "contextWindow": 400000,
           "maxOutput": 128000,
           "capabilities": [
@@ -1029,27 +745,6 @@
           "openWeights": false,
           "releaseDate": "2025-11-13",
           "authSupport": [
-            "api_key",
-            "oauth"
-          ]
-        },
-        "gpt-4o-2024-11-20": {
-          "id": "gpt-4o-2024-11-20",
-          "name": "GPT-4o (2024-11-20)",
-          "contextWindow": 128000,
-          "maxOutput": 16384,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "vision"
-          ],
-          "cost": {
-            "input": 2.5,
-            "output": 10
-          },
-          "openWeights": false,
-          "releaseDate": "2024-11-20",
-          "authSupport": [
             "api_key"
           ]
         }
@@ -1059,7 +754,6 @@
       "id": "deepseek",
       "name": "DeepSeek",
       "description": "DeepSeek V4 models with your DeepSeek API key",
-      "autoConnect": false,
       "authMethods": [
         {
           "type": "api_key",
@@ -1084,7 +778,7 @@
             "output": 0.28
           },
           "openWeights": true,
-          "releaseDate": "2026-04-24",
+          "releaseDate": "2026-07-31",
           "authSupport": [
             "api_key"
           ]
@@ -1099,11 +793,11 @@
             "reasoning"
           ],
           "cost": {
-            "input": 1.74,
-            "output": 3.48
+            "input": 0.435,
+            "output": 0.87
           },
           "openWeights": true,
-          "releaseDate": "2026-04-24",
+          "releaseDate": "2026-08-12",
           "authSupport": [
             "api_key"
           ]
@@ -1114,7 +808,6 @@
       "id": "anthropic",
       "name": "Anthropic",
       "description": "Claude models from Anthropic",
-      "autoConnect": false,
       "authMethods": [
         {
           "type": "api_key",
@@ -1124,90 +817,6 @@
       ],
       "defaultModel": "claude-sonnet-4-6",
       "models": {
-        "claude-haiku-4-5": {
-          "id": "claude-haiku-4-5",
-          "name": "Claude Haiku 4.5 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 1,
-            "output": 5
-          },
-          "openWeights": false,
-          "releaseDate": "2025-10-15",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-opus-4-5-20251101": {
-          "id": "claude-opus-4-5-20251101",
-          "name": "Claude Opus 4.5",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 5,
-            "output": 25
-          },
-          "openWeights": false,
-          "releaseDate": "2025-11-01",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-sonnet-4-6": {
-          "id": "claude-sonnet-4-6",
-          "name": "Claude Sonnet 4.6",
-          "contextWindow": 1000000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2026-02-17",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-opus-4-0": {
-          "id": "claude-opus-4-0",
-          "name": "Claude Opus 4 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 32000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 75
-          },
-          "openWeights": false,
-          "releaseDate": "2025-05-22",
-          "authSupport": [
-            "api_key"
-          ]
-        },
         "claude-opus-4-7": {
           "id": "claude-opus-4-7",
           "name": "Claude Opus 4.7",
@@ -1224,7 +833,49 @@
             "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2026-04-16",
+          "releaseDate": "2026-04-14",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "claude-opus-4-8": {
+          "id": "claude-opus-4-8",
+          "name": "Claude Opus 4.8",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 5,
+            "output": 25
+          },
+          "openWeights": false,
+          "releaseDate": "2026-05-28",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "claude-sonnet-5": {
+          "id": "claude-sonnet-5",
+          "name": "Claude Sonnet 5",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 2,
+            "output": 10
+          },
+          "openWeights": false,
+          "releaseDate": "2026-06-29",
           "authSupport": [
             "api_key"
           ]
@@ -1232,7 +883,7 @@
         "claude-sonnet-4-5-20250929": {
           "id": "claude-sonnet-4-5-20250929",
           "name": "Claude Sonnet 4.5",
-          "contextWindow": 200000,
+          "contextWindow": 1000000,
           "maxOutput": 64000,
           "capabilities": [
             "tool_call",
@@ -1246,48 +897,6 @@
           },
           "openWeights": false,
           "releaseDate": "2025-09-29",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-opus-4-1": {
-          "id": "claude-opus-4-1",
-          "name": "Claude Opus 4.1 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 32000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 75
-          },
-          "openWeights": false,
-          "releaseDate": "2025-08-05",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-sonnet-4-0": {
-          "id": "claude-sonnet-4-0",
-          "name": "Claude Sonnet 4 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 3,
-            "output": 15
-          },
-          "openWeights": false,
-          "releaseDate": "2025-05-22",
           "authSupport": [
             "api_key"
           ]
@@ -1313,11 +922,11 @@
             "api_key"
           ]
         },
-        "claude-opus-4-1-20250805": {
-          "id": "claude-opus-4-1-20250805",
-          "name": "Claude Opus 4.1",
-          "contextWindow": 200000,
-          "maxOutput": 32000,
+        "claude-sonnet-4-6": {
+          "id": "claude-sonnet-4-6",
+          "name": "Claude Sonnet 4.6",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
           "capabilities": [
             "tool_call",
             "attachment",
@@ -1325,11 +934,11 @@
             "vision"
           ],
           "cost": {
-            "input": 15,
-            "output": 75
+            "input": 3,
+            "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-08-05",
+          "releaseDate": "2026-02-17",
           "authSupport": [
             "api_key"
           ]
@@ -1355,10 +964,10 @@
             "api_key"
           ]
         },
-        "claude-sonnet-4-20250514": {
-          "id": "claude-sonnet-4-20250514",
-          "name": "Claude Sonnet 4",
-          "contextWindow": 200000,
+        "claude-sonnet-4-5": {
+          "id": "claude-sonnet-4-5",
+          "name": "Claude Sonnet 4.5 (latest)",
+          "contextWindow": 1000000,
           "maxOutput": 64000,
           "capabilities": [
             "tool_call",
@@ -1371,7 +980,70 @@
             "output": 15
           },
           "openWeights": false,
-          "releaseDate": "2025-05-22",
+          "releaseDate": "2025-09-29",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "claude-opus-4-5-20251101": {
+          "id": "claude-opus-4-5-20251101",
+          "name": "Claude Opus 4.5",
+          "contextWindow": 200000,
+          "maxOutput": 64000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 5,
+            "output": 25
+          },
+          "openWeights": false,
+          "releaseDate": "2025-11-24",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "claude-fable-5": {
+          "id": "claude-fable-5",
+          "name": "Claude Fable 5",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 10,
+            "output": 50
+          },
+          "openWeights": false,
+          "releaseDate": "2026-06-07",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "claude-haiku-4-5": {
+          "id": "claude-haiku-4-5",
+          "name": "Claude Haiku 4.5 (latest)",
+          "contextWindow": 200000,
+          "maxOutput": 64000,
+          "capabilities": [
+            "tool_call",
+            "attachment",
+            "reasoning",
+            "vision"
+          ],
+          "cost": {
+            "input": 1,
+            "output": 5
+          },
+          "openWeights": false,
+          "releaseDate": "2025-10-15",
           "authSupport": [
             "api_key"
           ]
@@ -1392,16 +1064,16 @@
             "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2026-02-05",
+          "releaseDate": "2026-02-04",
           "authSupport": [
             "api_key"
           ]
         },
-        "claude-sonnet-4-5": {
-          "id": "claude-sonnet-4-5",
-          "name": "Claude Sonnet 4.5 (latest)",
-          "contextWindow": 200000,
-          "maxOutput": 64000,
+        "claude-opus-5": {
+          "id": "claude-opus-5",
+          "name": "Claude Opus 5",
+          "contextWindow": 1000000,
+          "maxOutput": 128000,
           "capabilities": [
             "tool_call",
             "attachment",
@@ -1409,32 +1081,11 @@
             "vision"
           ],
           "cost": {
-            "input": 3,
-            "output": 15
+            "input": 5,
+            "output": 25
           },
           "openWeights": false,
-          "releaseDate": "2025-09-29",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "claude-opus-4-20250514": {
-          "id": "claude-opus-4-20250514",
-          "name": "Claude Opus 4",
-          "contextWindow": 200000,
-          "maxOutput": 32000,
-          "capabilities": [
-            "tool_call",
-            "attachment",
-            "reasoning",
-            "vision"
-          ],
-          "cost": {
-            "input": 15,
-            "output": 75
-          },
-          "openWeights": false,
-          "releaseDate": "2025-05-22",
+          "releaseDate": "2026-07-24",
           "authSupport": [
             "api_key"
           ]
@@ -1445,7 +1096,6 @@
       "id": "zai-coding-plan",
       "name": "Z.AI",
       "description": "GLM models from Z.AI Coding Plan — all free",
-      "autoConnect": false,
       "authMethods": [
         {
           "type": "api_key",
@@ -1475,44 +1125,6 @@
             "api_key"
           ]
         },
-        "glm-5.1": {
-          "id": "glm-5.1",
-          "name": "GLM-5.1",
-          "contextWindow": 200000,
-          "maxOutput": 131072,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": false,
-          "releaseDate": "2026-03-27",
-          "authSupport": [
-            "api_key"
-          ]
-        },
-        "glm-4.5-air": {
-          "id": "glm-4.5-air",
-          "name": "GLM-4.5-Air",
-          "contextWindow": 131072,
-          "maxOutput": 98304,
-          "capabilities": [
-            "tool_call",
-            "reasoning"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "openWeights": true,
-          "releaseDate": "2025-07-28",
-          "authSupport": [
-            "api_key"
-          ]
-        },
         "glm-5-turbo": {
           "id": "glm-5-turbo",
           "name": "GLM-5-Turbo",
@@ -1532,10 +1144,86 @@
             "api_key"
           ]
         },
-        "glm-5v-turbo": {
-          "id": "glm-5v-turbo",
-          "name": "GLM-5V-Turbo",
-          "contextWindow": 200000,
+        "glm-5.3": {
+          "id": "glm-5.3",
+          "name": "GLM-5.3",
+          "contextWindow": 1000000,
+          "maxOutput": 131072,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2026-08-14",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "glm-5.2": {
+          "id": "glm-5.2",
+          "name": "GLM-5.2",
+          "contextWindow": 1000000,
+          "maxOutput": 131072,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2026-06-13",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "glm-5.2-highspeed": {
+          "id": "glm-5.2-highspeed",
+          "name": "GLM-5.2 Highspeed",
+          "contextWindow": 1000000,
+          "maxOutput": 131072,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2026-06-13",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "glm-5.3-highspeed": {
+          "id": "glm-5.3-highspeed",
+          "name": "GLM-5.3 Highspeed",
+          "contextWindow": 1000000,
+          "maxOutput": 131072,
+          "capabilities": [
+            "tool_call",
+            "reasoning"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "openWeights": true,
+          "releaseDate": "2026-08-14",
+          "authSupport": [
+            "api_key"
+          ]
+        },
+        "glm-5.3-flash": {
+          "id": "glm-5.3-flash",
+          "name": "GLM-5.3-Flash",
+          "contextWindow": 1000000,
           "maxOutput": 131072,
           "capabilities": [
             "tool_call",
@@ -1548,7 +1236,7 @@
             "output": 0
           },
           "openWeights": false,
-          "releaseDate": "2026-04-01",
+          "releaseDate": "2026-08-26",
           "authSupport": [
             "api_key"
           ]

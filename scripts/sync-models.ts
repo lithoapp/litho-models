@@ -43,32 +43,25 @@ interface LithoModel {
   authSupport?: string[];
 }
 
-// OpenAI Codex models — accessible via both API key and OAuth
+// Models the ChatGPT/Codex OAuth backend serves. Everything else OpenAI
+// publishes is API-key only. Source: the Codex CLI's live model list
+// (~/.codex/models_cache.json), minus its internal-only entries.
 const OPENAI_CODEX_MODELS = new Set([
-  "gpt-5.3-codex",
-  "gpt-5-codex",
-  "gpt-5.1-codex-max",
-  "gpt-5.2-codex",
-  "gpt-5.1-codex-mini",
-  "gpt-5.1-codex",
+  "gpt-5.6-sol",
+  "gpt-5.6-terra",
+  "gpt-5.6-luna",
+  "gpt-5.5",
 ]);
 
-// OpenAI models accessible via both API key and OAuth — authSupport omitted (implies all)
-const OPENAI_BOTH_AUTH_MODELS = new Set(["gpt-5", "gpt-5.1", "gpt-5.2", "gpt-5.4", "gpt-5.5"]);
-
-function getOpenAIAuthSupport(modelId: string): string[] | undefined {
-  if (OPENAI_CODEX_MODELS.has(modelId)) return ["api_key", "oauth"];
-  if (OPENAI_BOTH_AUTH_MODELS.has(modelId)) return undefined;
-  return ["api_key"];
+function getOpenAIAuthSupport(modelId: string): string[] {
+  return OPENAI_CODEX_MODELS.has(modelId) ? ["api_key", "oauth"] : ["api_key"];
 }
 
 interface LithoProvider {
   id: string;
   name: string;
   description: string;
-  autoConnect: boolean;
   authMethods: { type: string; name: string; description?: string; oauth?: { clientId: string } }[];
-  internalProvider?: string;
   baseUrl?: string;
   defaultModel: string;
   models: Record<string, LithoModel>;
@@ -87,10 +80,6 @@ function deriveCapabilities(model: ModelsDevModel): string[] {
   if (model.reasoning) capabilities.push("reasoning");
   if (model.modalities?.input?.includes("image")) capabilities.push("vision");
   return capabilities;
-}
-
-function isFreeModel(model: ModelsDevModel): boolean {
-  return (model.cost?.input ?? -1) === 0 && (model.cost?.output ?? -1) === 0;
 }
 
 function transformModel(model: ModelsDevModel): LithoModel {
@@ -117,16 +106,14 @@ function transformProvider(
     .filter((t) => t !== "none") as string[];
 
   for (const [modelId, model] of Object.entries(sourceProvider.models)) {
-    if (curated.onlyFreeModels && !isFreeModel(model)) continue;
     if (curated.excludedModels?.includes(modelId)) continue;
     if (curated.allowedModels && !curated.allowedModels.includes(modelId)) continue;
-    if (curated.id === "openai" && modelId.startsWith("text-embedding")) continue;
+    if (!model.tool_call) continue; // Litho agents require tool calling
 
     const lithoModel = transformModel(model);
 
     if (curated.id === "openai") {
-      const authSupport = getOpenAIAuthSupport(modelId);
-      if (authSupport !== undefined) lithoModel.authSupport = authSupport;
+      lithoModel.authSupport = getOpenAIAuthSupport(modelId);
     } else if (providerAuthSupport.length > 0) {
       lithoModel.authSupport = providerAuthSupport;
     }
@@ -138,14 +125,12 @@ function transformProvider(
     id: curated.id,
     name: curated.name,
     description: curated.description,
-    autoConnect: curated.autoConnect,
     authMethods: curated.authMethods.map((am) => ({
       type: am.type,
       name: am.name,
       ...(am.description && { description: am.description }),
       ...(am.oauth && { oauth: am.oauth }),
     })),
-    ...(curated.internalProvider && { internalProvider: curated.internalProvider }),
     ...((curated.baseUrl ?? sourceProvider.api) && { baseUrl: curated.baseUrl ?? sourceProvider.api }),
     defaultModel: curated.defaultModel,
     models,
