@@ -29,6 +29,9 @@ export const curatedProviders: CuratedProvider[] = [
     description: "GPT and Codex models from OpenAI",
     authMethods: [
       { type: "api_key", name: "API Key", description: "OpenAI API key from platform.openai.com" },
+      // OpenAI's own published Codex CLI OAuth client ID — a public PKCE
+      // client with no secret, reused the way other third-party Codex
+      // integrations do. Not a Litho credential; safe to publish.
       { type: "oauth", name: "OAuth", description: "OAuth for Codex integration", oauth: { clientId: "app_EMoamEEZ73f0CkXaXp7hrann" } },
     ],
     // Retired from the Codex backend and never served by the public API.

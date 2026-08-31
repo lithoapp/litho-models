@@ -2,6 +2,7 @@
   "name": "litho-models",
   "version": "1.0.0",
   "description": "Curated models API for Litho",
+  "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "sync": "tsx scripts/sync-models.ts"

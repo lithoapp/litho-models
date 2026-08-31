@@ -11,6 +11,7 @@ terraform/override.tf
 terraform/override.tf.json
 terraform/*.override.tf
 terraform/*.override.tf.json
+terraform/terraform.tfvars
 
 # OS
 .DS_Store
